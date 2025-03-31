@@ -61,24 +61,24 @@ The dataset used in this project is the **Rolling Stone Album Rankings**, publis
 
 ## 3. Two main questions to answer and
 
-#### Question 1. How does the genre of an album and its release year affect its rank change from 2003 to 2020 in Rolling Stone’s list?
+#### Question 1. How do an album's genre and release year influence its ranking changes from 2003 to 2020?
 
-#### Question 2. How does the artist’s gender and the number of members in the artist group relate to the album’s popularity on Spotify?
+#### Question 2. How do artist gender and group size affect album popularity on Spotify?
 
 ---
 
 ## 4. Plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
 
-#### 1. How does the genre of an album and its release year affect its rank change from 2003 to 2020 in Rolling Stone’s list?
+#### 1. How do an album's genre and release year influence its ranking changes from 2003 to 2020?
 
 - Variables involved: genre, release_year, differential (rank_2020 - rank_2003)
 - Plan: Use statistical methods like ANOVA or regression to assess the relationship between genre, release_year, and differential. Group albums by genre and decade of release, then compare **average differentials (new variable)** to identify trends.
-- Visualize with box plots or heatmaps to show genre-specific changes over time.
+- Visualizations: Box plots and line graphs to depict trends clearly over time.
 - External data: None required
 
-#### 2. How does the artist’s gender and the number of members in the artist group relate to the album’s popularity on Spotify?
+#### 2. How do artist gender and group size affect album popularity on Spotify?
 
 - Variables involved: artist_gender, artist_member_count, spotify_popularity
 - Plan: Use regression analysis to model spotify_popularity with artist_gender and artist_member_count as predictors, then explore interactions, such as whether gender effects vary by group size.
-- Visualize with scatter plots or bar charts by gender and group size.
+- VVisualizations: Faceted scatter plots and grouped bar charts for clearer depiction of interactions.
 - External data: None required
