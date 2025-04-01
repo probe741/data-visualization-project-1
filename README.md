@@ -80,5 +80,5 @@ The dataset used in this project is the **Rolling Stone Album Rankings**, publis
 
 - Variables involved: artist_gender, artist_member_count, spotify_popularity
 - Plan: Use regression analysis to model spotify_popularity with artist_gender and artist_member_count as predictors, then explore interactions, such as whether gender effects vary by group size.
-- VVisualizations: Faceted scatter plots and grouped bar charts for clearer depiction of interactions.
+- Visualizations: Faceted scatter plots and grouped bar charts for clearer depiction of interactions.
 - External data: None required
