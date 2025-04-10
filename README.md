@@ -1,4 +1,62 @@
-# Data Visualization Project 1
+# 📊 Data Visualization - Music Rankings Through Time: Analysis of Rolling Stone's Top 500 Albums
+
+## Overview
+
+This project analyzes Rolling Stone magazine's Top 500 Albums dataset published as part of the TidyTuesday initiative on May 7, 2024.  
+We explore two main questions:
+
+- How do an album's genre and release year influence its ranking changes from 2003 to 2020?
+- How do artist gender and group size affect album popularity on Spotify?
+
+The analysis employs statistical methods including ANOVA, regression analysis, and data visualization techniques to identify trends in music rankings across time, genres, and artist demographics.
+
+Further details on methodology, findings, and discussions are available in the complete project documentation.
+
+## Repository Structure
+
+```
+.
+├── code/                # Jupyter notebooks for analyses
+│   ├── q1+q2.ipynb      # Main analysis for Questions 1 and 2
+│   └── q2_further.ipynb # Additional analysis for Question 2
+├── data/                # Dataset files and metadata
+│   ├── metadata.md      # Metadata for the dataset
+│   └── rolling_stone.csv # Main dataset file
+├── figures/             # Generated visualizations
+│   ├── box_plot_q1.jpeg # Box plots for Question 1 analysis
+│   ├── line_q1.jpeg     # Line graphs for Question 1 analysis
+│   ├── rank_box_q1.jpeg # Box plots of rankings for Question 1
+│   ├── q2_boxplot.png   # Box plots for Question 2 analysis
+│   ├── q2_correlation.png # Correlation analysis for Question 2
+│   ├── q2_peak_billboard.png # Billboard peak position analysis
+│   └── q2_weeks_billboard.png # Billboard weeks analysis
+├── presentation.pdf     # Project presentation slides
+├── proposal.md          # Original project proposal
+└── report.md            # Detailed project report
+```
+
+## Getting Started
+
+1. Clone this repository.
+2. Install required Python libraries:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Open the Jupyter notebooks in the `code/` directory to reproduce the analysis:
+   - `q1+q2.ipynb` for the main analysis of both research questions
+   - `q2_further.ipynb` for additional analysis on Question 2
+
+## Dataset
+
+- **Source**: Rolling Stone Magazine's Top 500 Albums, curated by [TidyTuesday](https://github.com/rfordatascience/tidytuesday/tree/main/data/2024/2024-05-07)
+- **Details**: Contains rankings from 2003, 2012, and 2020, along with album metadata, artist information, Billboard performance, and Spotify metrics.
+- **Full Documentation**: [Rolling Stone Data Documentation](https://github.com/rfordatascience/tidytuesday/blob/main/data/2024/2024-05-07/readme.md#rolling_stonecsv)
+
+## Acknowledgement
+
+This project is conducted as part of a Data Visualization course. We would like to express our gratitude to the course instructor and teaching assistants for their guidance and feedback.
+
+---
 
 ## Proposal: Analysis of Rolling Stone's Top 500 Albums Dataset
 
@@ -12,7 +70,7 @@ The dataset used in this project is the **Rolling Stone Album Rankings**, publis
 
 - **Source:** [TidyTuesday Rolling Stone Album Rankings Dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2024/2024-05-07)
 - **Original Publisher:** Rolling Stone Magazine
-- **Data Collection:** Information compiled from Rolling Stone’s published rankings, Billboard statistics, and Spotify metadata
+- **Data Collection:** Information compiled from Rolling Stone's published rankings, Billboard statistics, and Spotify metadata
 
 ### **Dataset Dimensions**
 
@@ -42,7 +100,7 @@ The dataset used in this project is the **Rolling Stone Album Rankings**, publis
 
 ### **Topic of Interest**
 
-- Music rankings have been a **widely discussed topic for decades**, shaping public opinion, artist legacies, and industry recognition. The **Rolling Stone Top 500 Albums** dataset presents a unique opportunity to analyze how factors such as **release year, genre, artist type, and commercial success** impact an album’s standing in music history.
+- Music rankings have been a **widely discussed topic for decades**, shaping public opinion, artist legacies, and industry recognition. The **Rolling Stone Top 500 Albums** dataset presents a unique opportunity to analyze how factors such as **release year, genre, artist type, and commercial success** impact an album's standing in music history.
 
 - Additionally, this dataset provides a **rich combination of historical rankings, commercial performance (Billboard data), and modern streaming popularity (Spotify metrics)**, making it ideal for **statistical analysis and data visualization**.
 
